@@ -1,0 +1,49 @@
+.ConnectUser {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formContainer {
+    width: 50%;
+}
+
+.UserFormBtn {
+    width: 100%;
+}
+
+.googleBtn {
+    width: 100%;
+    height: max-content;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    font-weight: 600;
+
+    border-radius: 25px;
+    border: solid 1px rgb(34, 34, 34);
+}
+
+.fineprint {
+    margin-bottom: 5%;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 500px) {
+    .formContainer {
+        width: 100%;
+    }    
+    .UserFormBtn {
+        position: fixed;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+    }
+}

@@ -1,0 +1,62 @@
+.WelcomePage {
+    align-items: flex-start;
+    width: 50%;
+}
+
+.WelcomePageBtn {
+    width: 30%;
+}
+
+.list {
+    width: 60%;
+    margin: 10% 0;
+    clear: both;
+    list-style: none;
+}
+
+.list li {
+    display: block;
+    position: relative;
+    counter-increment: inst;
+    margin: 2% 0;
+    font-weight: 600;
+}
+.list li::before {
+    content: counter(inst);
+    width: 1.35vw;
+    height: 1.35vw;
+    margin-right: 3%;
+    padding: 0.5% 1.5%;
+    
+    background: rgb(91, 134, 243);
+    color: #fff;
+    
+    border-radius: 100%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fineprint {
+    align-self: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .WelcomePage {
+        width: 100%;
+    }
+    .WelcomePageBtn {
+        width: 60%;
+    }    
+    .list {
+        width: 100%;
+    }
+    .fineprint {
+        text-align: center;
+    }
+}
